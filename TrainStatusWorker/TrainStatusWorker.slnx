@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="../.gitignore" />
+    <File Path="global.json" />
+    <File Path="nuget.config" />
+  </Folder>
+  <Project Path="TrainStatusWorker.csproj" />
+</Solution>

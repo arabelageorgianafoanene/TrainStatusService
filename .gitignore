@@ -1,0 +1,51 @@
+# .gitignore for .NET Worker Service (background service, PostgreSQL backend)
+
+### Build output ###
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+[Xx]64/
+[Xx]86/
+[Bb]uild/
+
+### IDE / editor files ###
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+### Rider ###
+.idea/
+*.sln.iml
+
+### NuGet ###
+# Skip this section entirely if using PackageReference only (default for SDK-style projects)
+# Only relevant if you have a legacy packages.config
+*.nupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+
+### Logs and runtime artifacts ###
+*.log
+logs/
+
+### Secrets / environment-specific config ###
+# Commit appsettings.json with placeholder values only.
+# Exclude any file that might contain a real PostgreSQL connection string.
+appsettings.*.json
+!appsettings.json
+!appsettings.Development.json
+secrets.json
+*.pfx
+*.key
+*.env
+.env
+
+### OS files ###
+.DS_Store
+Thumbs.db
